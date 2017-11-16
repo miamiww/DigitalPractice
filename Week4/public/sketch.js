@@ -59,7 +59,7 @@ function printOut(){
   console.log(tableNames.getColumn("name"));
   for(var r = 0; r < tableNames.getRowCount(); r++){
     textSize(10);
-    text(tableNames.getRow(r).get(0),10,10+10*r);
+    text(tableNames.getRow(r).get(0),width/2,10+10*r);
   }
 }
 
