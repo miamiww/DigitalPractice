@@ -17,7 +17,7 @@ function setup(){
 }
 
 function draw(){
-  background(255);
+  // background(255);
   // text(loadStuff(), width/2,height/2);
 
 }
@@ -58,7 +58,8 @@ function printOut(){
   lastButton.remove();
   console.log(tableNames.getColumn("name"));
   for(var r = 0; r < tableNames.getRowCount(); r++){
-    text(tableNames.getString(r,0),10,10+5*r);
+    textSize(10);
+    text(tableNames.getRow(r).get(0),10,10+10*r);
   }
 }
 
